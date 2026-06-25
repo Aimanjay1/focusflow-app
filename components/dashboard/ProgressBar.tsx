@@ -10,6 +10,9 @@ export function ProgressBar() {
           <span className="text-label-sm text-on-surface-variant">75%</span>
         </FieldLabel>
         <Progress value={75} id="progress-upload" />
+        <span className="text-label-sm text-on-surface-variant">
+          7 of 10 tasks completed! Keep up the good work and stay focused to achieve your goals for today.
+        </span>
       </Field>
     </div>
   );
