@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { ChartData } from "@/components/ChartData";
+import { ChartData } from "@/components/dashboard/ChartData";
+import { ProgressBar } from "@/components/dashboard/ProgressBar";
 
 const dashboardStats = [
   { id: 1, title: "Tasks Completed", value: 42 },
@@ -48,6 +49,7 @@ export default function Home() {
         </div>
       )}
 
+      <ProgressBar />
       <ChartData />
     </>
   );
