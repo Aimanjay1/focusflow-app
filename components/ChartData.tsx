@@ -1,5 +1,5 @@
 "use client";
-import { Bar, BarChart } from "recharts";
+import { Bar, BarChart, CartesianGrid } from "recharts";
 import { ChartContainer, type ChartConfig } from "@/components/ui/chart";
 
 const chartWeeklyData = [
@@ -31,6 +31,7 @@ export function ChartData() {
   return (
     <ChartContainer config={chartConfig} className="min-h-50 w-full">
       <BarChart accessibilityLayer data={chartWeeklyData}>
+        <CartesianGrid vertical={false} />
         <Bar dataKey="todo" fill="var(--color-todo)" radius={4} />
         <Bar dataKey="doing" fill="var(--color-doing)" radius={4} />
         <Bar dataKey="done" fill="var(--color-done)" radius={4} />
