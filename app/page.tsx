@@ -23,16 +23,6 @@ export default function Home() {
   return (
     <>
       <div className="p-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-          <button
-            type="button"
-            className="bg-primary text-on-primary p-2 rounded"
-            onClick={() => handleTabClick("Overview")}
-          >
-            <h2>{stats}</h2>
-          </button>
-        </div>
-
         <div className="flex gap-5">
           <div>
             {stats === "Overview" && (
