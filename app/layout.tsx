@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import link from "next/link";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,31 +30,33 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex" suppressHydrationWarning>
-        <aside
-          className="w-64 min-h-screen flex flex-col gap-6 p-4
-                   bg-surface-container text-on-surface
-                   border-r border-outline-variant"
-        >
-          <header>
-            <h1 className="text-headline-sm">FocusFlow</h1>
-            <p className="text-body-sm text-on-surface-variant">Profile</p>
-          </header>
+        <TooltipProvider delayDuration={0}>
+          <aside
+            className="w-64 min-h-screen flex flex-col gap-6 p-4
+                     bg-surface-container text-on-surface
+                     border-r border-outline-variant"
+          >
+            <header>
+              <h1 className="text-headline-sm">FocusFlow</h1>
+              <p className="text-body-sm text-on-surface-variant">Profile</p>
+            </header>
 
-          {/* Nav */}
-          <nav className="flex flex-col gap-1">
-            <p>Dashboard</p>
-            <p>Priority Matrix</p>
-            <p>Work</p>
-            <p>Study</p>
-            <p>History</p>
-          </nav>
+            {/* Nav */}
+            <nav className="flex flex-col gap-1">
+              <p>Dashboard</p>
+              <p>Priority Matrix</p>
+              <p>Work</p>
+              <p>Study</p>
+              <p>History</p>
+            </nav>
 
-          {/* Footer */}
-          <footer className="mt-auto text-label-md text-on-surface-variant">
-            © 2026 FocusFlow
-          </footer>
-        </aside>
-        <main>{children}</main>
+            {/* Footer */}
+            <footer className="mt-auto text-label-md text-on-surface-variant">
+              © 2026 FocusFlow
+            </footer>
+          </aside>
+          <main>{children}</main>
+        </TooltipProvider>
       </body>
     </html>
   );

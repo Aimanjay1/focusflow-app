@@ -1,0 +1,14 @@
+[
+  { "id": 1, "header": "Table of Contents", "type": "Table of Contents", "status": "Done", "target": "100%", "limit": "100%", "reviewer": "Eddie Lake" },
+  { "id": 2, "header": "Executive Summary", "type": "Executive Summary", "status": "In Progress", "target": "80%", "limit": "100%", "reviewer": "Jamik Tashpulatov" },
+  { "id": 3, "header": "Technical Approach", "type": "Technical Approach", "status": "In Progress", "target": "60%", "limit": "100%", "reviewer": "Assign reviewer" },
+  { "id": 4, "header": "Design Overview", "type": "Design", "status": "Not Started", "target": "0%", "limit": "100%", "reviewer": "Assign reviewer" },
+  { "id": 5, "header": "Core Capabilities", "type": "Capabilities", "status": "Done", "target": "100%", "limit": "100%", "reviewer": "Eddie Lake" },
+  { "id": 6, "header": "Focus Documents", "type": "Focus Documents", "status": "In Progress", "target": "40%", "limit": "100%", "reviewer": "Assign reviewer" },
+  { "id": 7, "header": "Project Narrative", "type": "Narrative", "status": "In Progress", "target": "75%", "limit": "100%", "reviewer": "Jamik Tashpulatov" },
+  { "id": 8, "header": "Cover Page", "type": "Cover Page", "status": "Done", "target": "100%", "limit": "100%", "reviewer": "Eddie Lake" },
+  { "id": 9, "header": "Risk Analysis", "type": "Narrative", "status": "Not Started", "target": "0%", "limit": "100%", "reviewer": "Assign reviewer" },
+  { "id": 10, "header": "Staffing Plan", "type": "Capabilities", "status": "In Progress", "target": "50%", "limit": "100%", "reviewer": "Jamik Tashpulatov" },
+  { "id": 11, "header": "Pricing Schedule", "type": "Focus Documents", "status": "Not Started", "target": "0%", "limit": "100%", "reviewer": "Assign reviewer" },
+  { "id": 12, "header": "Past Performance", "type": "Past Performance", "status": "In Progress", "target": "65%", "limit": "100%", "reviewer": "Eddie Lake" }
+]

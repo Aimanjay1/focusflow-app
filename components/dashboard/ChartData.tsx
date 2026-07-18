@@ -36,7 +36,7 @@ const chartConfig = {
 
 export function ChartData() {
   return (
-    <ChartContainer config={chartConfig} className="min-h-50 w-max">
+    <ChartContainer config={chartConfig} className="min-h-50 w-full">
       <BarChart accessibilityLayer data={chartWeeklyData}>
         <CartesianGrid vertical={false} />
         <XAxis dataKey="day" />

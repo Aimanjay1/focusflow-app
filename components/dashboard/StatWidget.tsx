@@ -1,10 +1,4 @@
 "use client";
-
-const dashboardStats = [
-  { id: 1, title: "Tasks Completed", value: 42 },
-  { id: 2, title: "Focus Sessions", value: 15 },
-  { id: 3, title: "Time Saved", value: "3h 20m" },
-];
 export function StatWidget({
   title,
   value,
